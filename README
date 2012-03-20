@@ -1,0 +1,43 @@
+# Androidify
+
+This script takes a bunch of image files designed for iPhone Integration and creates an android version
+
+# Requires
+
+- Unix based system (Mac OS X, CentOS, BSD, Linux, ...) or Cygwin
+- ImageMagick (Mac OS X : https://github.com/maddox/magick-installer, Other systems : http://www.imagemagick.org/script/binary-releases.php )
+
+# Base architecture
+
+images/
+	-- image1.png
+	-- image1@2x.png
+	-- image2.png
+	-- image2@2x.png
+
+Note that we need all images to have their Retina Display image (with and @2x suffix)
+
+This will give us the following result
+
+images/
+	-- image1.png
+	-- image1@2x.png
+
+	-- image2.png
+	-- image2@2x.png
+	
+	/android/
+		-- image1-low.png
+		-- image1-medium.png
+		-- image1-high.png
+		-- image1-xhigh.png
+
+		-- image2-low.png
+		-- image2-medium.png
+		-- image2-high.png
+		-- image2-xhigh.png
+
+
+# TODO
+
+- Handle low resolutions
