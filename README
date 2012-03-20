@@ -1,13 +1,27 @@
-# Androidify
+### Androidify ###
 
 This script takes a bunch of image files designed for iPhone Integration and creates an android version
 
-# Requires
+
+## Requires
 
 - Unix based system (Mac OS X, CentOS, BSD, Linux, ...) or Cygwin
 - ImageMagick (Mac OS X : https://github.com/maddox/magick-installer, Other systems : http://www.imagemagick.org/script/binary-releases.php )
 
-# Base architecture
+
+## Usages
+
+/!\ Caution, the script will work recursively throughout all the directories under the one you give as an argument. Be careful. /!\
+
+-- Launching the script
+sh androidify path_to_my_directory
+Example : ./androidify ~/Work/Application/Resources/images
+
+-- Erasing all created android directories and images
+sh androidify --clean path_to_my_directory
+Example : ./androidify ~/Work/Application/Resources/images
+
+## Base architecture
 
 images/
 	-- image1.png
@@ -38,6 +52,6 @@ images/
 		-- image2-xhigh.png
 
 
-# TODO
+## TODO
 
 - Handle low resolutions
