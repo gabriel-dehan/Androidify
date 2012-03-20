@@ -1,6 +1,6 @@
 ### Androidify ###
 
-This script takes a bunch of image files designed for iPhone Integration and creates an android version
+This script takes a bunch of image files designed for iPhone Integration and creates an android version of them
 
 
 ## Requires
@@ -11,15 +11,15 @@ This script takes a bunch of image files designed for iPhone Integration and cre
 
 ## Usages
 
-/!\ Caution, the script will work recursively throughout all the directories under the one you give as an argument. Be careful. /!\
+/!\ Caution, the script will work recursively throughout all subdirectories. Be careful. /!\
 
 -- Launching the script
 sh androidify path_to_my_directory
 Example : ./androidify ~/Work/Application/Resources/images
 
--- Erasing all created android directories and images
+-- Erasing all created android directories and images in all subdirectories
 sh androidify --clean path_to_my_directory
-Example : ./androidify ~/Work/Application/Resources/images
+Example : ./androidify --clean ~/Work/Application/Resources/images
 
 
 ## Base architecture
