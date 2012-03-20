@@ -21,6 +21,7 @@ Example : ./androidify ~/Work/Application/Resources/images
 sh androidify --clean path_to_my_directory
 Example : ./androidify ~/Work/Application/Resources/images
 
+
 ## Base architecture
 
 images/
